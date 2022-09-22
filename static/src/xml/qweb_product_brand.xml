@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+	<t t-name ="ProductItem" t-inherit="point_of_sale.ProductItem"
+	t-inherit-mode="extension" owl="1"
+	>
+		<xpath expr="//div[hasclass('product-name')]" position="after">
+
+			<t t-if="props.product.brand_id">
+
+        <div class="product-brand" t-attf-id="article_product_{{props.product.brand_id}}">
+                <t t-esc="props.product.brand_id" />
+
+            </div>
+
+
+		</t>
+	</xpath>
+
+	</t>
+</templates>

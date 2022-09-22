@@ -1,0 +1,9 @@
+<odoo>
+	<template id="assets" name="xls_assets" inherit_id="point_of_sale.assets">
+		<xpath expr="." position="inside">
+			 <link rel="stylesheet" href="/product_brand/static/src/css/product_brand.css"/>
+			<script type="text/javascript"
+			        src="/product_brand/static/src/js/product_brand.js"/>
+		</xpath>
+	</template>
+</odoo>
