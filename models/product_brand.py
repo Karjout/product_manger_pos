@@ -25,7 +25,6 @@ class ProductBrand(models.Model):
     product_ids = fields.One2many(
         "product.template", "product_brand_id", string="Brand Products"
     )
-    print(product_ids)
     products_count = fields.Integer(
         string="Number of products", compute="_compute_products_count"
     )
