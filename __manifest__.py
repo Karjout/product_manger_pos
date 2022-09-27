@@ -6,6 +6,7 @@
     'summary': 'Handle the addition/removal of multiple variants from '
                'product template into the sales order',
     'version': '12.0.1.0.2',
+    'sequence':1,
     'author': 'Tecnativa,'
               'Odoo Community Association (OCA)',
     'category': 'Sale',
@@ -16,8 +17,12 @@
         'web_widget_x2many_2d_matrix',
     ],
     'data': [
+        'security/ir.model.access.csv',
         'wizard/sale_manage_variant_view.xml',
         'views/sale_order_view.xml',
     ],
-    'installable': True,
+   'installable': True,
+   'application': True,
+   'auto_install': False,
+
 }

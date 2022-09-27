@@ -12,8 +12,9 @@
                            domain="[('attribute_line_ids', '!=', False)]"
                            options="{'no_create': True}"
                     />
-                    <field name="header"  domain="[('attribute_line_ids', '!=', False)]"
+                    <field name="product_name"  domain="[('attribute_line_ids', '!=', False)]"
                                  options="{'no_create': True}" />
+
                 </group>
                 <field name="variant_line_ids"
                        widget="x2many_2d_matrix"
@@ -27,6 +28,7 @@
                         <field name="value_x"/>
                         <field name="value_y"/>
                         <field name="product_uom_qty"/>
+
                     </tree>
                 </field>
                 <footer>
